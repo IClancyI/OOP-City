@@ -17,6 +17,7 @@ require_once __DIR__.'../service/cityLoader.php';
 require_once __DIR__.'../model/user.php';
 require_once __DIR__.'../service/userLoader.php';
 require_once __DIR__.'../service/DBManager.php';
+require_once __DIR__.'../service/logger.php';
 
 session_start();
 

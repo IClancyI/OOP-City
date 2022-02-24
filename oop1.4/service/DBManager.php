@@ -1,4 +1,14 @@
 <?php
+class DBManager
+{
+
+public function __construct(logger $logger)
+{
+    $this->logger = $logger;
+}
+
+private $logger;
+
 
 function CreateConnection()
 {
@@ -50,4 +60,5 @@ function ExecuteSQL( $sql )
     $result = $conn->query( $sql );
 
     return $result;
+}
 }
