@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 //print json_encode($_SERVER); exit;
 $request_uri = explode("/", $_SERVER['REQUEST_URI']);
@@ -13,10 +12,14 @@ require_once "sanitize.php";
 require_once "validate.php";
 require_once "security.php";
 
-require_once "access_control.php";
-
 require_once __DIR__.'../model/city.php';
 require_once __DIR__.'../service/cityLoader.php';
+require_once __DIR__.'../model/user.php';
+require_once __DIR__.'../service/userLoader.php';
+
+session_start();
+
+require_once "access_control.php";
 
 //initialize $errors array
 $errors = [];

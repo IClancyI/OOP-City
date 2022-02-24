@@ -2,7 +2,6 @@
 
 class City{
     //velden
-
     private $img_id;
 
     private $img_filename;
@@ -56,7 +55,7 @@ class City{
      */
     public function getImgTitle()
     {
-        return $this->img_title;
+        return strtoupper($this->img_title);
     }
 
     /**
@@ -64,7 +63,7 @@ class City{
      */
     public function setImgTitle($img_title): void
     {
-        $this->img_title = strtoupper($img_title);
+        $this->img_title = $img_title;
     }
 
     /**

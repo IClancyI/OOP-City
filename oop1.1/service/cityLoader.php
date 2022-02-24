@@ -9,7 +9,7 @@ class cityLoader
 
     private function getPDO()
     {
-        return CreateConnection();
+        return $this->pdo;
     }
 
     /**
