@@ -1,13 +1,13 @@
 <div class="col-sm-12 text-center">
 
-    <h3>@img_title@</h3>
+    <h3>@<?php $city->getTitle(); ?>@</h3>
 
-    <p>Filename: @img_filename@</p>
-    <p>@img_width@ x @img_height@ pixels</p>
+    <p>Filename: @<?php echo $city->getImgFilename(); ?>@</p>
+    <p>@<?php $city->getImgWidth(); ?>@ x @<?php $city->getImgHeight(); ?>@ pixels</p>
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 
-    <img alt=@img_title@ class="img-fluid" style="width: 75%;" src="img/@img_filename@">
+    <img alt=@<?php $city->getTitle(); ?>@ class="img-fluid" style="width: 75%;" src="img/@<?php $city->getImgFilename(); ?>@">
 
     <p></p>
     <a href=steden.php>Terug naar overzicht</a>
